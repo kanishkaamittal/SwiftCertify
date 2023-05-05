@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCertify</title>
+    <link rel="stylesheet" href="GenCertificates.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Baloo+Bhai+2&family=Bree+Serif&family=Concert+One&family=Crimson+Text:ital@1&family=Exo+2:ital,wght@1,300&family=Itim&family=Mochiy+Pop+One&family=Oswald&family=Permanent+Marker&family=Rampart+One&family=Sigmar&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script>
+        function openFileExplorer() {
+            // Trigger a click event on the hidden file input
+            document.getElementById("fileInput").click();
+        }
+
+        function handleFileSelection(event) {
+            var selectedFile = event.target.files[0];
+            console.log("Selected file:", selectedFile);
+            // Perform further operations with the selected file
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">SwiftCertify</h1>
+        <h3 class="title">Get Started</h3>
+    </header>
+
+    <div class="container">
+        <div class="img1">
+            <img src="logo1.png" alt="logo" height="130px" width="130px">
+        </div>
+        <div class="textHead1">Upload Template</div>
+        <div class="text1">Upload certificate template for personalized designs. Create visually stunning certificates
+            with ease.</div>
+        <button class="UploadTemp" onclick="openFileExplorer()">Upload Template</button>
+        <input type="file" onchange="handleFileSelection(event)" id="fileInput">
+
+        <button class="next" onclick="document.location='ExcelUpload.html'">Next</button>
+
+    </div>
+
+</body>
+
+</html>
